@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header .logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2.25rem; /* 36px */
+  line-height: 140%;
+  letter-spacing: 0%;
+  padding: 0;
+  color: #42A7C3;
+  margin-right: 12.25rem; /* 196px */
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header nav a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+header nav .sign {
+  font-weight: 700;
+  color: white;
+  background-color: #FA8443;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+}
+header nav .sign:hover {
+  background-color: rgb(209.4300518135, 77.9792746114, 5.5699481865);
+}
+
+.start {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.start .texto {
+  flex: 1;
+  max-width: 600px;
+}
+.start .texto h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+}
+.start .texto p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #666;
+}
+.start .lojas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.start .lojas .google, .start .lojas .apple {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #121212;
+  border: 2px solid #D0D0D0;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  min-width: 140px;
+}
+.start .lojas .google img, .start .lojas .apple img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.start .lojas .texto-google p, .start .lojas .texto-apple p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFF;
+}
+.start .lojas .texto-google h3, .start .lojas .texto-apple h3 {
+  font-family: "Lato", sans-serif;
+}
+
+.destinations {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.destinations h2 {
+  color: #333333;
+  /* Display md/Bold */
+  font-family: "Lato", sans-serif;
+  font-size: 2.25rem; /* 36px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 50.4px */
+  letter-spacing: -0.0225rem; /* -0.36px */
+}
+.destinations .descricao {
+  color: #333333;
+  /* Text md/Regular */
+  font-family: "Lato", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.03125rem; /* 0.5px */
+}
+.destinations .locais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.destinations .locais article {
+  align-items: center;
+  max-width: 18.5rem; /* 296px */
+  max-height: 20.75rem; /* 332px */
+  flex-shrink: 0;
+  border-radius: 1rem; /* 16px */
+  border: 0.0625rem solid #FFF; /* 1px */
+  background-color: rgba(240, 240, 240, 0.45);
+  backdrop-filter: blur(0.125rem); /* 2px */
+  margin-right: 2rem; /* 32px */
+  padding: 1.25rem; /* 20px */
+}
+.destinations .locais article .local {
+  color: #8F8F8F;
+  font-family: "Lato", sans-serif;
+  font-size: 0.625rem; /* 10px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 14px */
+  letter-spacing: 0.00625rem; /* 0.1px */
+}
+.destinations .locais article h1 {
+  color: #333333;
+  /* Text md/Bold */
+  font-family: "Lato", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.03125rem; /* 0.5px */
+}
+.destinations .locais article .duracao {
+  color: var(--Gray-600, #636363);
+  /* Text sm/Regular */
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem; /* 14px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.010938rem; /* 0.175px */
+}
+
+.choose {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.choose a {
+  color: var(--Gray-900-default, #121212);
+  text-decoration: none;
+  /* Text xl/Bold */
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.15px;
+}
+.choose .text h2 {
+  color: var(--Gray-900-default, #121212);
+  /* Display md/Bold */
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 50.4px */
+  letter-spacing: -0.36px;
+}
+.choose .text .enjoy {
+  color: var(--Gray-900-default, #121212);
+  /* Text xl/Regular */
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.15px;
+}
+.choose .card {
+  display: flex;
+  height: 112px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+.choose .card .text-card {
+  max-width: 600px;
+}
+.choose .card .text-card strong {
+  color: var(--Gray-900-default, #121212);
+  /* Text xl/Bold */
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.15px;
+}
+.choose .card .text-card p {
+  color: var(--Gray-600, #636363);
+  /* Text md/Regular */
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.5px;
+}
+.choose .card:hover {
+  transform: translateX(10px);
+  background-color: rgb(229.5, 229.5, 229.5);
+}
+
+.mundi {
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.mundi h1 {
+  color: #333333;
+  /* Display md/Bold */
+  font-family: "Lato", sans-serif;
+  font-size: 2.25rem; /* 36px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 50.4px */
+  letter-spacing: -0.0225rem; /* -0.36px */
+}
+.mundi p {
+  color: #333333;
+  /* Text md/Regular */
+  font-family: "Lato", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.03125rem; /* 0.5px */
+}
+
+footer {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #42A7C3;
+  flex-direction: column;
+}
+footer .beauty {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  margin-top: 30px;
+  margin-bottom: 100px;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+footer .beauty .beauty-text p {
+  color: white;
+}
+footer .beauty .beauty-text h2 {
+  color: white;
+}
+footer .beauty .beauty-login {
+  display: flex;
+  flex-direction: column;
+}
+footer .beauty .beauty-login .login, footer .beauty .beauty-login .registro {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  text-align: center;
+}
+footer .beauty .beauty-login .login {
+  color: white;
+  background-color: #42A7C3;
+  margin-bottom: 10px;
+}
+footer .beauty .beauty-login .registro {
+  color: #42A7C3;
+  background-color: white;
+}
+footer .get {
+  flex-direction: column;
+}
+footer .lojas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+footer .lojas .google, footer .lojas .apple {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #121212;
+  border: 2px solid #D0D0D0;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  min-width: 140px;
+}
+footer .lojas .google img, footer .lojas .apple img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+footer .lojas .texto-google p, footer .lojas .texto-apple p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFF;
+}
+footer .lojas .texto-google h3, footer .lojas .texto-apple h3 {
+  font-family: "Lato", sans-serif;
+}
+footer .links .logo-footer {
+  color: white;
+}
+footer .links a {
+  color: white;
+}
+footer article {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .rights {
+  display: flex;
+  justify-content: space-between;
+}
+footer .rights p {
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    transition: left 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .start {
+    flex-direction: column;
+  }
+  .choose {
+    flex-wrap: wrap;
+  }
+  .beauty-login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
